@@ -1,0 +1,72 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to OpenRouter",
+        "description": "Enter an OpenRouter API key. Use a **management key** to see your account's total credit balance; a regular API key only exposes that key's usage and limit.",
+        "data": {
+          "api_key": "API key",
+          "name": "Name"
+        },
+        "data_description": {
+          "api_key": "Create one at https://openrouter.ai/settings/keys (management keys: https://openrouter.ai/settings/management-keys).",
+          "name": "Optional. Defaults to \"OpenRouter\"."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate OpenRouter",
+        "description": "The stored API key no longer works. Enter a new one.",
+        "data": {
+          "api_key": "API key"
+        }
+      },
+      "reconfigure": {
+        "title": "Change OpenRouter API key",
+        "data": {
+          "api_key": "API key"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid API key.",
+      "cannot_connect": "Could not connect to OpenRouter.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This API key is already configured.",
+      "reauth_successful": "Re-authentication was successful.",
+      "reconfigure_successful": "API key updated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "OpenRouter Credits options",
+        "data": {
+          "scan_interval": "Update interval"
+        },
+        "data_description": {
+          "scan_interval": "How often to poll OpenRouter, in minutes."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "credits_remaining": { "name": "Credits remaining" },
+      "total_credits": { "name": "Total credits purchased" },
+      "total_usage": { "name": "Total usage" },
+      "key_usage": { "name": "Key usage" },
+      "key_usage_daily": { "name": "Key usage today" },
+      "key_usage_weekly": { "name": "Key usage this week" },
+      "key_usage_monthly": { "name": "Key usage this month" },
+      "key_limit": { "name": "Key limit" },
+      "key_limit_remaining": { "name": "Key limit remaining" },
+      "api_key_usage": { "name": "Usage" },
+      "api_key_usage_daily": { "name": "Usage today" },
+      "api_key_usage_weekly": { "name": "Usage this week" },
+      "api_key_usage_monthly": { "name": "Usage this month" },
+      "api_key_limit_remaining": { "name": "Limit remaining" }
+    }
+  }
+}

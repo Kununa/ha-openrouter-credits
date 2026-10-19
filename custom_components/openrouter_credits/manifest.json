@@ -1,0 +1,14 @@
+{
+  "domain": "openrouter_credits",
+  "name": "OpenRouter Credits",
+  "codeowners": [
+    "@Kununa"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/Kununa/ha-openrouter-credits",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/Kununa/ha-openrouter-credits/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
