@@ -12,7 +12,7 @@ A Home Assistant custom integration, `openrouter_credits`, that shows OpenRouter
   - `strings.json` and `translations/en.json`: keep these identical. Edit `strings.json`, then copy it over `en.json`.
   - `brand/`: PNG icons (`icon`, `dark_icon`, each with `@2x`), generated. Don't edit them by hand. There's deliberately no `logo.png`, so Home Assistant falls back to the icon.
 - `tests/`: tests built on pytest-homeassistant-custom-component. `conftest.py` has the fake API payloads and `mock_api()` / `mock_management_api()`, which register them on `aioclient_mock`.
-- `brand-src/`: `icon.svg` (original artwork: a credit gauge over a coin stack) and `make_brand.py`, which renders the light and dark PNGs with headless Edge and Pillow. **Never use OpenRouter's logo.**
+- `brand-src/`: `icon.svg` (original artwork: a progress ring around a coin showing one path splitting into three) and `make_brand.py`, which renders the light and dark PNGs with headless Edge and Pillow. **Never use OpenRouter's logo.**
 
 ## API facts
 
