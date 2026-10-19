@@ -9,7 +9,7 @@
           "name": "Name"
         },
         "data_description": {
-          "api_key": "Create one at https://openrouter.ai/settings/keys (management keys: https://openrouter.ai/settings/management-keys).",
+          "api_key": "Create one at {keys_url} (management keys: {management_keys_url}).",
           "name": "Optional. Defaults to \"OpenRouter\"."
         }
       },

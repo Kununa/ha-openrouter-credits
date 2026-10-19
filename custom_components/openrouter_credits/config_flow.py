@@ -92,6 +92,10 @@ class OpenRouterConfigFlow(ConfigFlow, domain=DOMAIN):
                 }
             ),
             errors=errors,
+            description_placeholders={
+                "keys_url": "https://openrouter.ai/settings/keys",
+                "management_keys_url": "https://openrouter.ai/settings/management-keys",
+            },
         )
 
     async def async_step_reauth(
